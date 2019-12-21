@@ -5,8 +5,17 @@ namespace PlayerScript
 {
     public class Te
     {
-        public int Level = 0;
-        public int Evo = 0;
-    }
+        private int Level = 0;
+        private int Evo = 0;
 
+        public void Levelup()
+        {
+            Level++;
+        }
+
+        public void LevelDown()
+        {
+            Level--;
+        }
+    }
 }

@@ -18,9 +18,7 @@ public class JankenLevel : MonoBehaviourPunCallbacks
 
     void Update()
     {
-        Text[0].text = player.gu.Level.ToString();
-        Text[1].text = player.choki.Level.ToString();
-        Text[2].text = player.pa.Level.ToString();
+        
     }
 
     public void LevelButton(string kind)
@@ -33,6 +31,9 @@ public class JankenLevel : MonoBehaviourPunCallbacks
             case "PUP": player.pa.Level++; break;
             case "PDOWN": player.pa.Level++; break;
         }
+        Text[0].text = player.gu.Level.ToString();
+        Text[1].text = player.choki.Level.ToString();
+        Text[2].text = player.pa.Level.ToString();
     }
   
 }
